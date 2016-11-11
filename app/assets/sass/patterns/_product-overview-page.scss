@@ -1,0 +1,88 @@
+// PRODUCT OVERVIEW PAGE STYLES
+
+
+// Blue intro panel on product overview pages
+
+.product-overview-intro {
+
+	.wrapper{
+	  @extend %site-width-container;
+  	  @extend %contain-floats;
+  	  padding-bottom: $gutter;	
+	}
+
+    background-color: $govuk-blue;
+    color: $white;
+    margin-top: -10px;
+    padding-top: $gutter;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+	// Links are white when when background is blue
+	a:link,
+	a:hover,
+	a:active,
+	a:visited{
+		color: $white;
+	}
+
+    // White 'get started' button style
+    .button-start, .button-get-started {
+    	background-image: file-url("icon-pointer-blue.png");
+	}
+	a.button-start{	
+	    background-color: $white;
+	    color: $govuk-blue;
+	    vertical-align: middle;
+	    margin-right: 10px;
+	}
+
+	// Reapply typographic styles outside 'main'
+	p, li{
+  		@include core-19;
+	}
+	.lede{
+  		@include core-24;		
+	}
+
+	.button-hint {
+	    margin-top: $gutter;
+	}
+
+	// search box
+
+	.in-manual-search-blue {
+	   position: relative;
+	 }
+
+	 .in-manual-search-blue label {
+	   padding-bottom: 5px;
+	}
+
+	.in-manual-search-blue #search-box {
+	   width: 90%;
+	   border: none;
+       padding: 5px;
+       font-size: 19px;
+	}
+
+	.in-manual-search-blue button {
+	   width: 39px;
+	   height: 39px;
+	   border: 1px solid $black ;
+	   border-width: 0 0 0 1px;
+	   border-left-color: #222;
+	   overflow: hidden;
+	   text-indent: -5000px;
+	   cursor: pointer;
+	   color: #fff;
+	   background: $black url(https://assets.publishing.service.gov.uk/manuals-frontend/search-button-de28edec94868c92285a8f97a79bb469.png) 
+	   no-repeat 0 50%;
+	   position: absolute;
+	   -webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	   border-radius: 0;
+	}
+	
+}

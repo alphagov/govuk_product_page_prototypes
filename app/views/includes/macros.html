@@ -1,0 +1,25 @@
+
+{% macro headerNav(navItems, section) %}
+
+<div class="header-proposition">
+  <div class="content">
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <ul id="proposition-links" class="right-aligned">
+
+        {% for href, id, title in navItems %}
+          <li><a {% if id == section %}class="active"{% endif %} href="{{ href }}">{{ title }}</a></li>
+        {% endfor %}
+
+      </ul>
+    </nav>
+  </div>
+</div>
+
+{% endmacro %}
+
+{% macro productName(name, phase) %}
+
+GOV.UK  <span class="product-name">{{ name }}</span> {% if phase %}<span class="phase-banner"><strong class="phase-tag">{{ phase }}</strong></span>{% endif %}
+
+{% endmacro %}

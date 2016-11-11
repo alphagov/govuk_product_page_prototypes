@@ -1,0 +1,132 @@
+{% extends "_layouts/govuk-pay.html" %}
+
+{% set section = "about" %}
+
+{% block content %}
+
+<div class="product-overview-intro">
+  <div class="wrapper">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">Take and process payments for government services</h1>
+
+        <p class="lede"> 
+        GOV.UK Pay allows the public and businesses to pay for government services in a consistent way. It also gives service teams the tools they need to reconcile these payments and deal with any potential queries.
+        </p>
+
+        <a class="button button-start" href="https://payments:team@pay-staff-tool-2.herokuapp.com/create-account" role="button">
+          Try it today
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="content" role="main">
+
+  <h2 class="heading-large" id="1">Benefits of GOV.UK Pay</h2>
+
+  <p class="text">GOV.UK Pay makes it easier for the public and businesses to pay for government services. It also makes it much easier for service teams to process these payments.</p> 
+
+ 
+<div class="grid-row">
+      <div class="column-one-half">
+        <p>Benefits to service teams include being able to:</p>
+
+        <ul class="list list-bullet">
+          <li>troubleshoot payment queries easily</li>
+          <li>issue refunds and chargebacks</li>
+          <li>reconcile payments</li>
+          <li>generate financial reports for specific time periods</li>
+          <li>send receipt emails to users</li>
+          <li>invite team members and issue specific permission levels</li>
+          <li>select different payment methods and card types</li>
+        </ul>
+      </div>
+
+      <div class="column-one-half">
+        <p>Benefits to those paying government include:</p>
+
+        <ul class="list list-bullet">
+          <li>a better and more consistent payment experience across government services</li>
+          <li>a choice regarding how to pay</li>
+          <li>more accessible payment pages</li>
+        </ul>
+       </div>
+
+  </div>
+
+  <hr>
+
+  <h2 class="heading-large" id="3">How GOV.UK Pay works</h2>
+
+  <div class="text">
+
+    <p>GOV.UK Pay builds technical integrations with payment service providers to make it simple for services across central government to take online payments. It will also reduce processing costs for government.</p>
+
+    <p>GOV.UK Pay will do the hard work of building technical integrations with a number of leading payment service providers so that individual services don’t have to.</p>
+
+    <p>This will:</p>
+
+    <ul class="list list-bullet">
+      <li>make it simpler, easier and faster for government services to start taking payments</li>
+      <li>give government teams more options to take online payments, including credit and debit cards</li>
+      <li>increase efficiency in government payment processing by reducing the need for manual payment processing</li>
+      <li>make it easier for teams to reconcile payments and issue refunds</li>
+    </ul>
+
+  </div>
+
+  <hr>
+
+  <h2 class="heading-large" id="3">Who's using GOV.UK Pay?</h2>
+
+  <img src="/public/images/org-logos-pay-1.jpg">
+
+  <div class="text">
+    <p>GOV.UK Pay is currently being used by 4 organisations accross government. We are keen to work with more services. If you are interested in using GOV.UK Pay for your service please <a href="#">get in touch</a>. </p>
+  </div>
+
+  <hr>
+
+  <h2 class="heading-large" id="3">Try it out</h2>
+
+  <p><a href="https://payments:team@pay-staff-tool-2.herokuapp.com/create-account">Create and account and test out the admin tool</a></p>
+
+  <p><a href="#">View the public facing payment pages</a></p>
+
+  <hr>
+
+  <h2 class="heading-large" id="4">Documentation</h2>
+
+  <p><a href="https://gds-payments.gelato.io/docs/versions/1.0.0">View documentaton for GOV.UK Pay</a></p>
+
+  <p>Documentation includes:</p>
+
+  <ul class="list list-bullet">
+    <li>API documentation</li>
+    <li>information on how to integrate your service with GOV.UK Pay</li>
+    <li>how to run tests with the code</li>
+    <li>code structure</li>
+  </ul>
+
+  <hr>
+          
+  <h2 class="heading-large" id="5">Built by Government for Government</h2>
+
+  <div class="team-image">
+    <img src="/public/images/team-pay.jpg">
+  </div>
+
+  <p>GOV.UK Pay is built and supported by a full time team at GDS. The product owners are Till Wirth and Rory Smith.</p>
+
+  <h2 class="heading-medium">Contact us</h2>
+
+  <a href="#">govuk-pay@digital.cabinet-office.gov.uk</a>
+
+
+</main>
+
+{% endblock %}
