@@ -2,6 +2,8 @@
 
 {% set productName = "Service Manual" %}
 
+{% set homepage_url = "/govuk-service-manual/" %}
+
 {% block header_class %}
   {{ super() }} with-search
 {% endblock %}
@@ -10,6 +12,7 @@
 {% endblock %}
 
 {% block inside_header %}
+
   <a href="#search" class="search-toggle js-header-toggle">Search</a>
   <form id="search" class="site-search" action="/search" method="get" role="search" style="width: 33.3%; margin-top: 1px;">
     <div class="content">
@@ -18,4 +21,5 @@
       <input class="submit" type="submit" value="Search">
     </div>
   </form>
+
 {% endblock %}
