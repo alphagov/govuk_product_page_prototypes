@@ -8,6 +8,12 @@
       <ul id="proposition-links" class="right-aligned">
 
         {% for href, title in navItems %}
+
+          {# Handle external links #}
+          {% if 'http' in href %}
+          {% set homepage_url = '' %}
+          {% endif %}
+
           <li><a {% if href == section %}class="active"{% endif %} href="{{ homepage_url }}{{ href }}">{{ title }}</a></li>
         {% endfor %}
 
