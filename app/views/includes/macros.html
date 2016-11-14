@@ -1,5 +1,5 @@
 
-{% macro headerNav(navItems, section) %}
+{% macro headerNav(homepage_url, navItems, section) %}
 
 <div class="header-proposition">
   <div class="content">
@@ -7,8 +7,8 @@
     <nav id="proposition-menu">
       <ul id="proposition-links" class="right-aligned">
 
-        {% for href, id, title in navItems %}
-          <li><a {% if id == section %}class="active"{% endif %} href="{{ href }}">{{ title }}</a></li>
+        {% for href, title in navItems %}
+          <li><a {% if href == section %}class="active"{% endif %} href="{{ homepage_url }}{{ href }}">{{ title }}</a></li>
         {% endfor %}
 
       </ul>
