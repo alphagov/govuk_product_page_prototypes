@@ -1,7 +1,5 @@
 {% extends "_layouts/govuk_template.html" %}
 
-{% set section = section -%}
-
 {% import "includes/macros.html" as macro %}
 
 {% block head %}
@@ -27,7 +25,7 @@
         </div>
         {% block inside_header %}{% endblock %}
       </div>
-        {{ macro.headerNav(navItems, section) }}
+      {{ macro.headerNav(homepage_url, navItems, section) }}
     </div>
   </header>
   {% block after_header %}{% endblock %}
