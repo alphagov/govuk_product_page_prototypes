@@ -1,13 +1,14 @@
 {% extends "_layouts/layout.html" %}
 
-{% set productName = "Notify" %}
+{% set productName = "Pay" %}
 
-{% set homepage_url = "/govuk-notify/" %}
+{% set homepage_url = "/govuk-pay/" %}
 
 {% set phase = "beta" %}
 
 {# Product nav URLs and link text #}
 {% set navItems = [
+  ['signedin', 'User Name'],
   ['support', 'Support'],
   ['documentation', 'Documentation'],
   ['getstarted', 'Get started'],
