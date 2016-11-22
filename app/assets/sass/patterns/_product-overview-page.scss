@@ -105,6 +105,10 @@
 
     .breadcrumbs {
         border-bottom: 1px solid #377FB9;
+
+        .active {
+            color: white;
+        }
     }
 	
 }
@@ -138,8 +142,13 @@ img .img_org-logos {
     
     padding-bottom: 5px;
 
+    a {
+        
+    }
+
     .active {
         font-weight: bold;
+        color: $black;
     }
 }
 

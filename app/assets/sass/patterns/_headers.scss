@@ -41,8 +41,11 @@
 
 // Right-aligned header links
 #global-header .header-proposition #proposition-links.right-aligned{
+  
+  float: right;
+
   li{
-    float: right;
+    float: left;
       padding: 0 0 0 15px;
   }
 }
