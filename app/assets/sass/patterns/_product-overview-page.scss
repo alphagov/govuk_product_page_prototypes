@@ -44,12 +44,16 @@
 	    color: $govuk-blue;
 	    vertical-align: middle;
 	    margin-right: 10px;
-        margin-bottom: 10px;
+        
 
 	   	@media screen and (max-width: 640px) {
     		margin-bottom: $gutter/3;
     	}
 	}
+
+    p a.button-start {
+        margin-bottom: 10px;
+    }
 
 	.button_paragraph {
 		margin-bottom: 0;

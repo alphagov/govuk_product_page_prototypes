@@ -59,22 +59,30 @@ nav.subnav {
     @extend %contain-floats;
     font-size: em(16);
     width: 100%;
-    // background-color: $grey-3;
-    // border-top: 1px solid $grey-3;
-    // border-bottom: 1px solid $grey-3;
     text-align: right;
     display: block;
     width: 100%;
-    margin-top: em(45);
+    
+
+    @media screen and (min-width: 640px) {
+        margin-top: em(45);
+    }
 
     ul {
         list-style: none;
 
-        // float: left;
 
         li {
+            display: block;
+            text-decoration: none;
+            padding: 10px 15px 10px 0;
+            text-align: left;
+            background-color: transparent;
+            border-bottom: 1px solid $grey-3;
 
-            // float: left;
+            &.active {
+                font-weight: bold;
+            }
 
             &:last-child a {
                 &:last-child {
@@ -83,14 +91,9 @@ nav.subnav {
             }
 
             a {
-            
-                display: block;
                 
                 text-decoration: none;
-                padding: 10px 15px 10px 0;
-                text-align: left;
-                background-color: transparent;
-                border-bottom: 1px solid $grey-3;
+                
              
                 &:hover {
                     text-decoration: underline;
