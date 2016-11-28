@@ -56,3 +56,18 @@
     line-height: 1.25;
 }
 
+// Temporary class to highlight sections with no url or content
+
+.no-link {
+    color: #999 !important;
+
+    a {
+        color: #999 !important;
+
+        &:visited,
+        &:hover {
+            color: #999 !important;
+        }
+    }
+}
+

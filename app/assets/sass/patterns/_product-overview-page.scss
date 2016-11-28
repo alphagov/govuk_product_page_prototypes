@@ -115,7 +115,28 @@
             color: white;
         }
     }
-	
+
+    img {
+        width: 100%;
+        margin-top: $gutter*2;
+
+        @media screen and (max-width: 640px) {
+             margin-top: 0;
+             max-width: 400px;
+        }
+    }
+
+    .product-overview-intro-image {
+        text-align: center;
+    }
+
+    .product-overview-intro-text,
+    .product-overview-intro-image {
+        @media screen and (min-width: 641px) and (max-width: 860px) {
+            width: 50% !important;
+        }
+    }
+
 }
 
 // Images on Product Page
