@@ -17,10 +17,28 @@
     .header-global,
     .header-proposition{
       width: 50%;
+
+      @media screen and (max-width: 860px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        
+      }
+
     }
   }
+
+  .header-global {
+    display: block;
+  }
+
+  .header-proposition {
+    display: block;
+  }
+
   .header-proposition #proposition-menu{
-    margin-top: 10px;  
+    margin-top: 6px;  
   }
 
 }
@@ -28,23 +46,58 @@
 // Smaller phase tag in header
 #global-header .phase-banner {
     border: 0;
-    margin-left: 5px;
+    margin-left: 10px;
+
   .phase-tag{
     font-size: 14px;
     vertical-align: middle;
     background: $govuk-blue;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 2px 5px 0 6px;
+    padding: 2px 5px -0px 6px;
   }
+
 }
 
 // Right-aligned header links
-#global-header .header-proposition #proposition-links.right-aligned{
-  li{
-    float: right;
-      padding: 0 0 0 15px;
+#global-header .header-proposition #proposition-links.right-aligned {
+  
+  float: right;
+
+
+  @media screen and (max-width: 860px) {
+    float: left;
+    margin-top: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  li {
+    float: left;
+    padding: 0 0 0 15px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+    }
+
+  }
+}
+
+// Menu trigger spacing fix
+
+a.js-header-toggle.menu.js-hidden {
+    line-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: none !important;
 }
 
 // FULL WIDTH HEADER

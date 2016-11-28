@@ -1,0 +1,107 @@
+{% extends "_layouts/govuk-registers.html" %}
+
+{% set section = "index" %}
+
+{% block content %}
+
+<div class="product-overview-intro">
+  <div class="wrapper">
+    <div class="grid-row">
+
+<!--       <div class="column-full">
+        <div class="breadcrumbs">
+          <ol>
+            <li>
+                <a href="../govuk-service-manual/data.html">Government Data</a>
+            </li>
+            <li class="active">
+                Registers
+            </li>
+          </ol>
+        </div>
+
+      </div> -->
+      
+      <div class="column-two-thirds">
+
+          <h1 class="heading-xlarge">Build services using accurate and up-to-date data</h1>
+
+          <p class="lede mb_0"> 
+          Use registers to build your service and get access to current and reliable data.
+          </p>
+          
+<!--           <a class="button button-start" href="https://payments:team@pay-staff-tool-2.herokuapp.com/create-account" role="button">
+            Try it today
+          </a> -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds"> 
+
+          <h2 class="heading-large" id="1">What registers are</h2>
+
+          <p>Registers are lists of information. Each register is the most reliable list of its kind. For example, the Foreign and Commonwealth Office’s (FCO’s) <a href="https://country.register.gov.uk/">country&nbsp;register</a> is the most accurate and up-to-date list of countries available.</p>
+
+          <p>Each register is looked after by one person, known as the &lsquo;custodian&rsquo;. The custodian is from the organisation responsible for the information in the register. They make sure the register is kept up to date.</p> 
+          
+          <hr class="m_0">
+
+          <h2 class="heading-large" id="2">The benefits of registers</h2>
+
+          <p>Using a register will mean you’re only ever working with one reliable and current source of data.</p> 
+
+
+          <p>Other sources (such as a statistical report) might not be properly looked after. They can be out of date or unpublished at any time.</p>
+
+
+          <p>This can affect your service and stop it working the way it should for your users.</p>
+
+
+          <p>Using a register instead will mean you can concentrate on building your service rather than checking if the data you’re using is still accurate.</p>
+
+
+          <p>Registers can also help you if you collect, manage or store data for your organisation. Find out how to <a href="https://www.gov.uk/guidance/creating-a-register">create a register</a></p>
+
+          <!-- <hr class="m_0"> -->
+
+<!--           <h2 class="heading-large" id="3">Using a register</h2>
+
+            <p>You can use an application programming interface (API) to automatically pull data from a register into your service. Doing this will mean you’ll always have access to the most recent version of the data in the register.</p>
+
+            <p>The data is available in a number of different formats. You can:</p>
+
+            <ul class="list list-bullet">
+              <li>use it as JSON if you’re a developer</li>
+              <li>download it as a CSV file if you work with spreadsheets</li>
+              <li>download it as an RDF file if you need to link it to another register</li>
+            </ul> -->
+
+    </div> <!-- End Two Thirds -->
+
+    <div class="column-one-third">
+        <div class="govuk-related-items">
+          <h2 class="heading-medium">
+            Registers you can use</h2>
+          
+            <ul class="font-xsmall">
+                <li><a rel="" href="https://country.register.gov.uk/">Country register</a></li>
+                <li><a rel="" href="https://local-authority-eng.register.gov.uk/">Local authority England register</a></li>
+                <li><a rel="" href="https://local-authority-type.register.gov.uk/">Local authority type register</a></li>
+            </ul>
+
+        
+        </div> <!-- End Items -->
+    </div> <!-- End One Third -->
+
+  </div> <!-- End row -->
+
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends "_layouts/govuk-registers.html" %}
+
+{% set section = "using-registers" %}
+
+{% block content %}
+
+<main id="content" class="content" role="main">
+
+<div class="breadcrumbs">
+  <ol>
+<!--     <li>
+        <a href="../govuk-service-manual/data.html">Government Data</a>
+    </li> -->
+    <li>
+        <a href="index.html">Registers</a>
+    </li>
+    <li class="active">
+        Using Registers
+    </li>
+  </ol>
+</div>
+
+
+
+
+<div class="grid-row">
+    <div class="column-one-third">
+
+		<nav class="subnav">
+			<ul class="">
+				<li><a href="available-registers">Available registers</a></li>
+				<li><a href="combining-registers">Combining registers</a></li>
+			</ul>
+		</nav>
+
+
+
+<!-- 	Jump links
+
+	<div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 286px;">
+      		<h2 class="heading-medium page-contents-title">Contents</h2>
+      			<ul class="page-contents__list">
+		        <li>
+		          <a href="#how-registers-are-kept-up-to-date">How registers are kept up to date</a>
+		        </li>
+		        <li>
+		          <a href="#how-registers-work">How registers work</a>
+		        </li>
+		        <li>
+		          <a href="#available-registers">Registers you can use</a>
+		        </li>
+		        <li>
+		          <a href="#how-to-use-a-register">How to use a register</a>
+		        </li>
+		        <li>
+		          <a href="#help-using-registers">Help using registers</a>
+		        </li>
+      		</ul>
+   		 </div>
+ -->
+
+	</div>
+
+	<div class="column-two-thirds">
+    
+		<h1 class="heading-large">How registers can help you build better digital services</h1>
+
+		<p>Most registers are classified as &lsquo;open&rsquo;, which means the data within them can be accessed, copied and used freely by anyone. You can choose to use all or some of the data in the register.</p>
+
+		<p>You can use the data to create features for forms. For example, the <a href="https://petition.parliament.uk/">UK government and Parliament petitions service</a> uses the <a href="https://country.register.gov.uk/">country register</a> to populate a drop-down menu from which users can select their location.</p>
+
+
+		<h2 class="heading-medium" id="how-registers-are-kept-up-to-date">How registers are kept up to date</h2>
+
+		<p>Each register is managed by one person from the organisation that&rsquo;s responsible for the data within it. This person is known as the custodian.</p>
+
+
+		<p>As they&rsquo;re responsible for looking after the register, you can be confident that the data you&rsquo;re using to build your service is current.</p>
+
+
+		<p>Using registers to build services is more reliable than using other sources of information, which might be out of date or at risk of being unpublished at any time.</p>
+
+
+		<h2 class="heading-medium" id="how-registers-work">How registers work</h2>
+
+		<p>Each register is made up of records. Each record is made up of &lsquo;fields&rsquo; and &lsquo;values&rsquo;. For example, in the country register the record for Estonia has a field called &lsquo;official-name&rsquo;. The value of this field is &lsquo;The Republic of Estonia&rsquo;.</p>
+
+		<p>Fields and values aren&rsquo;t specific to just one register. They can be used across several registers, regardless of which organisation manages them.</p>
+
+		<p>This stops information being duplicated across registers. It also means registers can be easily linked to each other, which can help if you need access to data from more than one organisation to build your service.</p>
+
+		<p>When any of the information in a register changes, a new &lsquo;entry&rsquo; is added to the record.</p>
+
+		<p>The most recent entry is shown as the current version of the record. Older entries are also kept as part of the record to show when it was changed.</p>
+
+
+
+		<h2 class="heading-medium" id="how-to-use-a-register">How to use a register</h2>
+
+		<p>There are 2 ways to use a register. You can either:</p>
+
+		<ul class="list list-bullet">
+		  <li>use an <a href="https://www.gov.uk/service-manual/making-software/apis.html">application programming interface</a> (API) to automatically pull data from a register into your service</li>
+
+		  <li>periodically download the data from the register&rsquo;s homepage and keep and update your own copy of it  </li>
+		</ul>
+
+		<!-- <h2 class="heading-medium" id="help-using-registers">Help using registers</h2>
+
+		<p>Contact the registers team at <abbr title="Government Digital Service">GDS</abbr> if you need help using a register.</p>
+
+		<p><a href="mailto:registerteam@digital.cabinet-office.gov.uk">registerteam@digital.cabinet-office.gov.uk</a></p> -->
+
+		</div>
+	</div>
+</div> 
+
+</main>
+
+{% endblock %}

@@ -7,17 +7,24 @@
 
 	.wrapper{
 	  @extend %site-width-container;
-  	  @extend %contain-floats;
-  	  padding-bottom: $gutter;	
+  	  @extend %contain-floats;	
 	}
 
     background-color: $govuk-blue;
     color: $white;
     margin-top: -10px;
-    padding-top: $gutter;
+    padding: 0 0 $gutter 0;
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
+
+    @media screen and (max-width: 640px) {
+    	padding: $gutter/2 0 $gutter/2 0;
+    }
+
+    h1.heading-xlarge {
+        margin-bottom: 20px;
+    }
 
 	// Links are white when when background is blue
 	a:link,
@@ -31,17 +38,33 @@
     .button-start, .button-get-started {
     	background-image: file-url("icon-pointer-blue.png");
 	}
+
 	a.button-start{	
 	    background-color: $white;
 	    color: $govuk-blue;
 	    vertical-align: middle;
 	    margin-right: 10px;
+        
+
+	   	@media screen and (max-width: 640px) {
+    		margin-bottom: $gutter/3;
+    	}
 	}
+
+    p a.button-start {
+        margin-bottom: 10px;
+    }
+
+	.button_paragraph {
+		margin-bottom: 0;
+	}
+
 
 	// Reapply typographic styles outside 'main'
 	p, li{
   		@include core-19;
 	}
+
 	.lede{
   		@include core-24;		
 	}
@@ -63,7 +86,7 @@
 	.in-manual-search-blue #search-box {
 	   width: 90%;
 	   border: none;
-       padding: 5px;
+       padding: 5px 5px 5px 10px;
        font-size: 19px;
 	}
 
@@ -84,5 +107,113 @@
 	   -moz-border-radius: 0;
 	   border-radius: 0;
 	}
+
+    .breadcrumbs {
+        border-bottom: 1px solid #377FB9;
+
+        .active {
+            color: white;
+        }
+    }
 	
+}
+
+// Images on Product Page
+
+img .img_org-logos {
+	width: 100%;
+	max-width: 760px;
+}
+
+.team-image img {
+    width: 50%;
+    float: right;
+    margin: 0 0 0 $gutter;
+
+    @media screen and (max-width: 500px) {
+    	width: 100%;
+    	margin: 0 0 $gutter/2 0;
+    }
+}
+
+
+// Breadcrumbs
+
+.breadcrumbs {
+    @include breadcrumbs;
+}
+
+.breadcrumbs {
+    
+    padding-bottom: 5px;
+
+    a {
+        
+    }
+
+    .active {
+        font-weight: bold;
+        color: $black;
+    }
+}
+
+
+// Related Items
+
+.govuk-related-items {
+    border-top: 10px solid #005ea5 !important;
+    padding-top: 5px;
+    margin-top: 45px;
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+    
+        li {
+            margin-bottom: 0.75em;
+
+            &:last-child {
+                margin-bottom: 1.5em;
+            }
+        }
+    }
+}
+
+// Contents
+
+.page-contents {
+    margin-top: 2em;
+    padding-bottom: 4em;
+}
+
+.content-fixed {
+    top: 0;
+    position: fixed;
+}
+
+.page-contents__list li {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.14286;
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    padding-right: 15px;
+}
+
+.page-contents__list a {
+    text-decoration: none;
+}
+
+.page-contents__list li:before {
+    content: "–";
+    float: left;
+    display: block;
+    width: 15px;
+    margin-left: -15px;
 }

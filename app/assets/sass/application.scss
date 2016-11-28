@@ -13,10 +13,6 @@ $path: "/public/images/";
 @import 'patterns/product-overview-page';
 @import 'patterns/search-in-header';
 @import 'patterns/tabs';
-
-.team-image img {
-    max-width: 460px;
-    float: right;
-    margin-top: 10px;
-}
+@import 'patterns/subnav';
+@import 'patterns/helpers';
 
