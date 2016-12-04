@@ -47,13 +47,67 @@
 </div>
 
 <div class="grid-row">
-      <div class="column-half">
+      <div class="column-two-thirds">
           <p>Service teams can:</p>
+          <ul class="list list-bullet">
+            <li>save time and money which would have been spent on setting up a hosting infrastructure</li>
+            <li>deploy and run applications written in a range of languages and frameworks</li>
+            <li>rapidly scale applications</li>
+            <li>easily manage their applications</li>
+            <li>get 24 hour platform-level support</li>
+            <li>get started easily using a simple procurement process</li>
+          </ul>
+      </div>
+</div>
+<div class="grid-row">
+      <div class="column-full">
+        <h2 class="heading-large" id="1">Resilient and flexible</h2>
+      </div>
+      <div class="column-two-thirds">
+          <p>GOV.UK PaaS is hosted by Amazon Web Services (AWS), run from AWS’s European data centre in Ireland. The PaaS is:</p>
+          <ul class="list list-bullet">
+            <li>resilient since it operates across three independent availability zones</li>
+            <li>accredited for handling information classified as Official</li>
+            <li>built on an open source platform (Cloud Foundry) and deployed to a public cloud</li>
+            <li>flexible since applications aren’t locked into one cloud provider</li>
+          </ul>
+      </div>
+      <div class="column-two-thirds">
+          <p>The PaaS is already being used by the GOV.UK Trade Tariff live service, as well as several services building prototypes.</p>
+          <p><a href="#">Find out more about GOV.UK PaaS</a>. This includes how it’s built, run and supported, as well as how to use it.</p>
       </div>
 </div>
 
-  
-
+<div class="grid-row">
+      <div class="column-two-thirds">
+          <h2 class="heading-large" id="1">What you pay for</h2>
+          <p>You pay for what you use, like hosting, compute resource and backing services such as a database. The Government Digital Service will pay for building and maintaining the platform.</p> 
+          <p>The overall cost depends on factors such as the number of environments you deploy to, the size and number of your applications and whether they need to have high availability.</p>
+      </div>
+</div>
+<div class="grid-row">
+      <div class="column-two-thirds">
+          <h2 class="heading-large" id="1">Criteria for deploying an application to the PaaS</h2>
+          <p>Your application can run on the PaaS if you:</p>
+          <ul class="list list-bullet">
+            <li>follow the twelve-factor application principles - this will be the case if your app was written to be deployed to another PaaS, such as Heroku</li>
+            <li>don’t require any backing service apart from a PostgreSQL database</li>
+            <li>don’t carry data certified as Secret or above</li>
+            <li>write applications in a language supported by the default Cloud Foundry buildpacks</li> 
+      </div>
+</div>
+<div class="grid-row">
+      <div class="column-half">
+        <div class="team-image">
+              <img src="/public/images/paas-team-2.jpg">
+        </div>
+      </div>
+      <div class="column-half">
+      <h2 class="heading-large" id="1">Contact the GOV.UK PaaS team</h2>
+          <p>GOV.UK PaaS is built and managed by a full-time team of developers, webops engineers, product managers and user researchers at GDS. The product manager is Jess O’Leary.</p> 
+          <p><a href="#">Contact the team</a> to ask for a trial account or ask a question.</p>
+      </div>
+</div>
 </main>
 
 {% endblock %}

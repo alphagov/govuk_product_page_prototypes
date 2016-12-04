@@ -72,6 +72,7 @@
 
 	.button-hint {
 	    margin-top: $gutter;
+        @include core-19;
 	}
 
 	// search box
@@ -148,9 +149,9 @@ img .img_org-logos {
 }
 
 .team-image img {
-    width: 50%;
+    width: 100%;
     float: right;
-    margin: 0 0 0 $gutter;
+    margin: $gutter 0 0 $gutter;
 
     @media screen and (max-width: 500px) {
     	width: 100%;
