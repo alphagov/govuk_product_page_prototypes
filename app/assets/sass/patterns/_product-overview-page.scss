@@ -26,6 +26,7 @@
         margin-bottom: 30px;
     }
 
+
 	// Links are white when when background is blue
 	a:link,
 	a:hover,
@@ -158,6 +159,13 @@ img .img_org-logos {
     	margin: 0 0 $gutter/2 0;
     }
 }
+
+//section rule separators
+
+    .section-border-top {
+        margin-top: 30px;
+        border-top: 1px solid $border-colour;
+    }
 
 
 // Breadcrumbs
