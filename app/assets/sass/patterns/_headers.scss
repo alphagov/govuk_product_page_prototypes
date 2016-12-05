@@ -6,10 +6,11 @@
 #global-header.govuk-product{
 
   // Product name
-  .product-name{
+  .product-name {
     font-weight: 400;
-    padding-left: 5px;
+    // padding-left: 5px;
     font-size: 24px;
+    white-space: nowrap;
   }
 
   // Right aligned header links
@@ -18,7 +19,7 @@
     .header-proposition{
       width: 50%;
 
-      @media screen and (max-width: 860px) {
+      @media screen and (max-width: 940px) {
         width: 100%;
       }
 
@@ -27,6 +28,10 @@
       }
 
     }
+  }
+
+  .header-logo {
+    width: 100%;
   }
 
   .header-global {
@@ -66,9 +71,9 @@
   float: right;
 
 
-  @media screen and (max-width: 860px) {
+  @media screen and (max-width: 940px) {
     float: left;
-    margin-top: 10px;
+    margin-top: 6px;
   }
 
   @media screen and (max-width: 768px) {
