@@ -19,11 +19,16 @@
     overflow-y: hidden;
 
     @media screen and (max-width: 640px) {
-    	padding: $gutter/2 0 $gutter/2 0;
+    	padding: 0 0 $gutter/2 0;
     }
 
     h1.heading-xlarge {
+        margin-top: 45px;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 640px) {
+            margin-top: 30px;
+        }
     }
 
 
@@ -68,7 +73,7 @@
 
 	.lede{
   		@include core-24;
-        margin-bottom: 30px;		
+        // margin-bottom: 30px;		
 	}
 
 	.button-hint {
