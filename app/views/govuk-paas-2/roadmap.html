@@ -1,0 +1,104 @@
+{% extends "_layouts/govuk-paas-2.html" %}
+
+{% set section = "features" %}
+
+{% block content %}
+
+<main id="content" class="content" role="main">
+<div class="breadcrumbs">
+  <ol>
+    <li>
+        <a href="../govuk-service-manual/index#govuk-products">Products</a>
+    </li>
+    <li>
+        <a href="index.html">Platform as a Service</a>
+    </li>
+    <li>
+        <a href="features.html">Features</a>
+    </li>
+    <li class="active">
+        Roadmap
+    </li>
+  </ol>
+</div>
+
+<div class="grid-row">
+    <div class="column-one-third">
+
+        <nav class="subnav">
+            <ul class="">
+                <li><a href="features">Features</a></li>
+                <li class="active"><a href="roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="column-two-thirds">
+        <h1 class="heading-large">Roadmap for GOV.UK Platform as a Service (PaaS)</h1>
+            <p>We want to build the PaaS for government based on what you need. This roadmap is a rough indication of what we're planning on building in the near-, medium-, and long-term.</p>
+
+            <p>Items on the roadmap are our current estimate when things will be available on the platform for use by users. If you would like more information about anything we mention below please <a href="/govuk-paas-2/support">get in touch</a></p> 
+
+        <h2 class="heading-medium">Current Offering</h2>
+
+            <p>The following features are available on the PaaS now. You can read more about the detail in our <a href="https://government-paas-developer-docs.readthedocs.io/en/latest/">development documentation</a>.</p>
+
+            <h3 class="heading-small">Platform</h3>
+                <ul class="list list-bullet">
+                    <li>Deploy apps in numerous languages and frameworks: Python, JVM based, Node.js, Ruby, Go</li>
+                    <li>Rapidly Scale App Instances</li>
+                    <li>Cross data-center deployment</li>
+                    <li>Log shipping to Software as a Service for Apps</li>
+                </ul> 
+            <h3 class="heading-small">Security</h3>
+                <ul class="list list-bullet">
+                    <li>Official – No Sensitive or Personal Information</li>
+                </ul> 
+            <h3 class="heading-small">Backing services</h3>
+                <ul class="list list-bullet">
+                    <li>Postgres</li>
+                </ul>
+
+        <h2 class="heading-medium">Requested Features</h2>
+
+            <p>Below are features which people have been asking about, but are not currently in our plans.</p>
+
+            <h3 class="heading-small">Docker</h3>
+                <p>Cloud Foundry supports pushing a Docker image as an app. This feature is not currently enabled on the Government PaaS because allowing deployment from Docker images, where the root filesystem is controlled by the tenant, raises additional security concerns: <a href="https://github.com/cloudfoundry/diego-design-notes/blob/c59e475020a22e244c6074f89c45b55f7b1e2867/docker-support.md#docker-in-a-multi-tenant-world">see this note from the CF developers</a> for more details. We hope to enable support for Docker images in the future. If you would like to be able to push Docker images, please <a href="/govuk-paas-2/support">contact our support team</a>, providing details of your use case.
+                </p>
+            <h3 class="heading-small">Cloud Foundry Route Services</h3>
+                <p>The Cloud Foundry command line client has an option to enable you to connect directly to the virtual machines on which your apps run using cf ssh. See the <a href="https://docs.cloudfoundry.org/devguide/deploy-apps/ssh-apps.html">Cloud Foundry documentation</a> on accessing apps with SSH. This functionality is currently disabled on the Government PaaS. We intend to make it available in future, following security testing.
+                </p>
+
+        <h2 class="heading-medium">Roadmap</h3>
+            <p> This roadmap is for informational purposes only, so you shouldn't rely on this information for major purchasing or planning purposes. As with all things we may be affected by changing priorities or delays.
+            </p>
+
+            <h3 class="heading-small">Near-term</h3>
+                <ul class="list list-bullet">
+                    <li>Information Assurance for Personal Data</li>
+                    <li>Information Assurance for Sensitve Data</li>
+                    <li>Redis Backing Service</li>
+                    <li>SSH Access to Containers</li>
+                </ul> 
+            <h3 class="heading-small">Medium-term</h3>
+                <ul class="list list-bullet">
+                    <li>Elasticsearch as a Backing Service</li>
+                    <li>Self Service SSL Cert Management</li>
+                    <li>MongoDB as a Backing Service</li>
+                    <li>Self Service User Management</li>
+                    <li>Improved Backing Service Monitoring</li>
+                </ul> 
+            <h3 class="heading-small">Long-term</h3>
+                <ul class="list list-bullet">
+                    <li>Private Networking for Apps</li>
+                    <li>User Application Monitoring</li>
+                </ul>      
+
+    </div>  
+</div>
+ 
+
+</main>
+
+{% endblock %}
