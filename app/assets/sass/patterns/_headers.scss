@@ -20,7 +20,7 @@
       width: 50%;
 
       @media screen and (max-width: 940px) {
-        width: 100%;
+        width: 80%;
       }
 
       @media screen and (max-width: 768px) {
@@ -32,6 +32,11 @@
 
   .header-logo {
     width: 100%;
+
+    &.content {
+      padding-right: 200px;
+    } 
+
   }
 
   .header-global {
@@ -74,12 +79,11 @@
   @media screen and (max-width: 940px) {
     float: left;
     margin-top: 6px;
+    margin-bottom: 6px;
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 8px;
+
   }
 
   li {
@@ -96,6 +100,14 @@
 
   }
 }
+
+
+ #global-header .header-proposition {
+    padding-top: 0px; }
+    @media (min-width: 769px) {
+      #global-header .header-proposition {
+        padding-top: 0; }
+    }
 
 // Menu trigger spacing fix
 
@@ -225,4 +237,31 @@ a.js-header-toggle.menu.js-hidden {
       text-decoration: none;
       padding-right: 15px;
     }
+}
+
+
+// Mobile nav trigger
+
+
+#global-header .header-proposition a.menu {
+  
+    border: 1px solid $grey-1;
+    padding: 5px 8px;
+    font-size: em(16);
+    font-weight: bold;
+
+
+    @media screen and (max-width: 768px) { 
+      position: absolute;
+      top: $gutter/2;
+      right: $gutter;
+    }
+
+    @media screen and (max-width: 640px) { 
+      top: 0;
+      right: 0;
+      border-top: 0;
+      border-right: 0;
+    }
+
 }
