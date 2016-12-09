@@ -3,7 +3,9 @@
 
         
     nav.footer {
-        
+
+        // background-color: $black;
+
         @media screen and (min-width: 769px) { 
             display: none;
         }
@@ -30,12 +32,19 @@
                         padding: 10px 0;
                         border-bottom: 1px solid $grey-2;
                         text-decoration: none;
+                        font-weight: 700;
                     }
 
                     ul {
                         padding-left: $gutter/2;
                         margin-bottom: $gutter/4;
-                        display: none;
+                        
+                        li {
+                            a {
+                                font-weight: 400;
+                                border-bottom: 1px dotted $grey-2;
+                            }
+                        }
                     }
 
                 }
@@ -45,3 +54,10 @@
 
     }
 
+.footer-wrapper {
+    padding-top: $gutter !important;
+
+    @media screen and (max-width: 768px) { 
+        padding-top: $gutter/2 !important;
+    }
+}
