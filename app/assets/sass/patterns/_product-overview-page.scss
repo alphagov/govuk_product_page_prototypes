@@ -33,12 +33,18 @@
 
 
 	// Links are white when when background is blue
-	a:link,
-	a:hover,
-	a:active,
-	a:visited{
-		color: $white;
-	}
+	
+    a {
+        color: $white;
+
+        &:hover {
+            color: $black;
+        }
+
+        &:active, &:visited {
+            color: $white;
+        }
+    }
 
     // White 'get started' button style
     .button-start, .button-get-started {
