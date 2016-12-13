@@ -40,10 +40,6 @@
         &:hover {
             color: $black;
         }
-
-        &:active, &:visited {
-            color: $white;
-        }
     }
 
     // White 'get started' button style
@@ -130,6 +126,10 @@
 
     .breadcrumbs {
         border-bottom: 1px solid #377FB9;
+
+        a {
+            color: $white;
+        }
 
         .active {
             color: white;
