@@ -146,6 +146,19 @@
         }
     }
 
+    img.component-logo {
+        width: 110px;
+        margin: $gutter 0 $gutter-half; 
+        float: right;
+
+        @media screen and (max-width: 640px) {
+            width: 100px;
+            margin-bottom: 0;
+            float: left;
+        }
+
+    }
+
     .product-overview-intro-image {
         text-align: center;
     }
@@ -270,3 +283,52 @@ img .img_org-logos {
     width: 15px;
     margin-left: -15px;
 }
+
+// Video
+
+.video-wrapper {
+    padding: 5px;
+    border: 1px solid $border-colour;
+}
+
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+
+// Grid overrides 
+
+.column-float-left {
+    
+    float: left;
+
+    @media screen and (max-width: 640px) {
+        clear: left;
+        width: 100%;
+    }
+
+}
+
+.column-float-right {
+    
+    float: right;
+
+    @media screen and (max-width: 640px) {
+        clear: right;
+        width: 100%;
+    }
+
+}       
+
