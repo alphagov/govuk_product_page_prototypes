@@ -183,6 +183,10 @@ img .img_org-logos {
     width: 100%;
 }
 
+.diagram-image img {
+    width: 100%;
+}
+
 .team-image img {
     width: 100%;
     float: right;
@@ -194,8 +198,24 @@ img .img_org-logos {
     }
 }
 
+.diagram-image-2 img {
+    width: 100%;
+    float: right;
+    margin: 50px 0 0 $gutter;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        margin: 0 0 $gutter/2 0;
+    }
+}
+
 .sample-image {
     max-width: 460px;
+    margin-top: 50px;
+}
+
+.pci-image img {
+    width: 50%;
     margin-top: 50px;
 }
 
