@@ -13,9 +13,6 @@
     <li>
         <a href="index.html">GOV.UK Pay</a>
     </li>
-    <li>
-        <a href="features.html">Features</a>
-    </li>
     <li class="active">
         Roadmap
     </li>
@@ -23,56 +20,45 @@
 </div>
 
 <div class="grid-row">
-    <div class="column-one-third">
+    <!-- <div class="column-one-third">
 
         <nav class="subnav">
             <ul class="">
-                <li><a href="features">Features</a></li>
                 <li class="active"><a href="roadmap">Roadmap</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
 
     <div class="column-two-thirds">
-        <h1 class="heading-large">Roadmap for GOV.UK Pay</h1>
-            <p>We want to build the Pay to be useful for service teams across government. This roadmap is an indication of what we’re planning to build in the near, medium and long-term based on what users have told us they need.</p>
+        <h1 class="heading-large">Roadmap</h1>
+            <p>Here’s a list of the new functionality we’re planning to offer through GOV.UK&nbsp;Pay over the next 6 to 9 months.</p>
 
-            <p>If you would like to find out more about these plans, or you have feedback on whether or not these features are useful for you, please <a href="/govuk-pay/support">get in touch</a>.</p>
+            <p class="panel panel-border-wide">This roadmap is a only a guide and may change from month to month.</p>
 
-            <p>To see the features and benefits thay GOV.UK Pay offers right now, see our <a href="/govuk-pay/features">product page</a>.</p>
+            <p>If you want to find out more about these features, or have some needs that GOV.UK Pay isn’t yet meeting, please get in touch with us by emailing <a href="mailto:govuk-pay-support@digital.cabinet-office.gov.uk">govuk-pay-support@digital.cabinet-office.gov.uk</a> or chat with us in our <a href="">cross-government Slack channel</a>.</p>
 
-        <h2 class="heading-medium">Roadmap</h3>
-            <p> This roadmap is for informational purposes only and may be affected by changing priorities. You shouldn’t rely on this information for major purchasing or planning purposes.
-            </p>
-
-            <h3 class="heading-small">Next 1 to 3 months</h3>
+            <h3 class="heading-medium">June 2017</h3>
                 <ul class="list list-bullet">
-                    <li>Information assurance for handling sensitive data</li>
-                    <li>Redis as a backing service</li>
-                    <li>SSH access to containers</li>
+                    <li>Self service account creation and team management</li>
+                    <li>Support for Barclays ePDQ</li>
+                    <li>Add an additional AWS region for disaster recovery within 1 hour</li>
                 </ul> 
-            <h3 class="heading-small">3 to 6 months</h3>
+            <h3 class="heading-medium">July to September 2017</h3>
                 <ul class="list list-bullet">
-                    <li>Elasticsearch as a backing service</li>
-                    <li>Self Service SSL certification management</li>
-                    <li>MongoDB as a backing service</li>
-                    <li>Self Service user management</li>
-                    <li>Enhanced backing service monitoring</li>
+                    <li>Improved refund-related reporting</li>
+                    <li>Reporting for settlement of funds to merchant bank account</li>
+                    <li>Basic aggregate reporting dashboards for payments</li>
+                    <li>Support for Maestro and Visa Electron</li>
                 </ul> 
-            <h3 class="heading-small">6 to 12 months</h3>
+            <h3 class="heading-medium">September 2017 onwards</h3>
                 <ul class="list list-bullet">
-                    <li>Private networking for applications</li>
-                    <li>User application monitoring</li>
+                    <li>Include payment statuses in redirect to partner services</li>
+                    <li>Foreign currency support</li>
+                    <li>Delayed capture</li>
+                    <li>Refund confirmation emails</li>
+                    <li>Foreign language support</li>
+                    <li>Recurring card payments</li>
                 </ul>
-
-        <h2 class="heading-medium">Requested Features</h2>
-
-            <p>Below are the features we’ve been asked about but are not planning to develop right now, and why.</p>
-
-            <h3 class="heading-small">Docker</h3>
-                <p>Cloud Foundry supports pushing a Docker image as an application. This feature is not currently enabled on the Government PaaS because allowing deployment from Docker images, where the root filesystem is controlled by the tenant, raises additional security concerns: <a href="https://github.com/cloudfoundry/diego-design-notes/blob/c59e475020a22e244c6074f89c45b55f7b1e2867/docker-support.md#docker-in-a-multi-tenant-world">see this note from the CF developers</a> for more details. We hope to enable support for Docker images in the future. If you would like to be able to push Docker images, please <a href="/govuk-paas-2/support">contact our support team</a>, providing details of why you want to use it.
-                </p>
-
     </div>  
 </div>
  
