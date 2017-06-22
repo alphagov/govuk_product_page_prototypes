@@ -358,5 +358,34 @@ img .img_org-logos {
         width: 100%;
     }
 
-}       
+}     
+
+
+// Transcripts 
+
+.transcript {
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.transcript summary:hover, summary:focus, details[open] summary:hover, details[open] summary:focus{
+    background-color: #DEE0E2;
+
+
+}  
+
+.transcript details[open]{
+    background-color: #DEE0E2;
+}
+
+.transcript details{
+    padding: 0 0 5px 5px;
+}
+
+
+
+.transcript p {
+    padding: 0 15px 0px 10px;
+}
+
 
