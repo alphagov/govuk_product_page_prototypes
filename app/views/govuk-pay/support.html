@@ -15,30 +15,66 @@
         <a href="index.html">Pay</a>
     </li>
     <li class="active">
-        Contact
+        Support
     </li>
   </ol>
 </div>
 
 
-<div class="grid-row">
-  <div class="column-two-thirds">  
-        <h1 class="heading-large">GOV.UK Pay contact</h1>
-          <p>To learn more about GOV.UK Pay, contact the team at:<br><a href="#">govuk-pay-support@digital.cabinet-office.gov.uk</a> <!-- or chat with us in our <a href="">cross-government Slack channel</a> -->. </p><p>GOV.UK Pay is built and supported 24/7 by a full time team at the Government Digital Service. The service manager is Till Wirth.</p>
+<div class="grid-row"> 
+  <div class="column-two-thirds support">  
+        <h1 class="heading-large">Support</h1>
 
-          <p>Follow our <a href="getstarted">Guide to getting started</a> to create an account.</p>
+        <form action"#" method=""">
+          <div class="form-group">
+            <fieldset>
 
+              <legend>
+                <h2 class="heading-medium">How can we help you?</h2>
+              </legend>
 
-        <!-- <h2 class="heading-medium">Create an account</h2>
-          <p>Test GOV.UK Pay for yourself by <a href="https://pay-staff-tool-2.herokuapp.com/create-account">creating an account</a>.</p>
-            <p>You can explore the sandbox (test) environment, and use the same account details when you’re ready to go live.</p>  -->
-        
-        <h2 class="heading-medium">More information</h2>
-        <p>See how to use GOV.UK Pay with our <a href="documentation">technical documentation</a>.</p>
-    </div>
-  </div>        
+              <div class="multiple-choice">
+                <input id="radio-1" type="radio" name="radio-group" value="Report a problem">
+                <label for="radio-1">Report a problem</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-2" type="radio" name="radio-group" value="Ask a question or give feedback">
+                <label for="radio-2">Ask a question or give feedback</label>
+              </div>
 
+            </fieldset>
+          </div>
+          <div class="form-group">
+            <input class="button" type="submit" value="Continue">
+          </div>
 
+        </form>
+  </div>      
+  <div class="column-two-thirds">
+     <h2 class="heading-medium ">Support process</h2>
+       <p>If you have a problem, first check for known issues on the <a href="">GOV.UK&nbsp;Pay system status page</a>. Subscribe to get alerts on the progress of any listed issue.</p>
+
+       <h3 class="heading-small">During office hours</h3>
+       <p>Our office hours are 9.30am to 5.30pm, Monday to Friday. You can email us at <a href="">govuk-pay-support@digital.cabinet-office.gov.uk</a></p>
+
+       <p>Or chat with us on our cross-government Slack channel: <a href="">https://ukgovernmentdigital.slack.com/messages/govuk-pay</a></p>
+
+       <h3 class="heading-small">Out of hours support</h3>
+
+       <p>We offer 24 hour online support for critical incidents affecting live production services. We have different response times depending on whether the problem you want to report is an emergency.</p>
+
+       <p>It’s only an emergency if:</p>
+
+       <ul class="list list-bullet">
+         <li>no one in your team can log in</li>
+         <li>...</li>
+         <li>...</li>
+       </ul>
+
+       <p>We’ll reply within 30 minutes and give you hourly updates until the problem’s fixed.</p>
+
+       <p>We’ll reply by the next working day for any other problems.</p>
+  </div>      
 </main>
 
 {% endblock %}
