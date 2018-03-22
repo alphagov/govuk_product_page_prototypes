@@ -1,0 +1,76 @@
+{% extends "_layouts/govuk-pay.html" %}
+
+{% set section = "getstarted" %}
+
+{% block content %}
+
+<main id="content" class="content" role="main">
+
+<div class="breadcrumbs">
+  <ol>
+    <li>
+        <a href="../govuk-service-manual/index#govuk-products">Components</a>
+    </li>
+    <li>
+        <a href="index.html">GOV.UK&nbsp;Pay</a>
+    </li>
+    <li class="active">
+        Self service payments
+    </li>
+  </ol>
+</div>
+<div class="grid-row">
+    <div class="column-two-thirds column-minimum">
+
+      <h1 class="heading-large">
+        Self service payments
+      </h1>
+
+
+    <p>Payment links allow your service to receive online payments from your users. You don’t need to have a digital service to use payment links.</p>
+
+    <p>You can add a payment link to paper forms, letters, and emails - or wherever you’d like your users to see it. When your users visit your payment link, they’ll be able to make an online card payment to your service.</p>
+
+      <h2 class="heading-medium">Benefits of using online payments</h2>
+
+      <p>Online payments are 4 times more cost effective than offline methods, like cheques, money orders and cash payments.</p>
+      <p>By using self service payments your service can:</p>
+
+      <ul class="list list-bullet"> 
+        <li>Reduce human error and manual processes</li>
+        <li>Speed up payment process and know when you’ve been paid</li>
+        <li>Process refunds more easily</li>
+        <li>Stop collecting card payment details on paper forms</li>
+        <li>Stop telephone call backs to take card payments</li>
+        <li>Reduce PCI DSS complexity</li>
+        <li>Reduce Cheques, BACS and cash payments</li>
+      </ul>
+
+      <h2 class="heading-medium">Setting up a payment link</h2>
+      <p>A payment link is quick and easy to set up and is ready to use right away. You don’t need any technical knowledge to create a payment link and no API integration is needed with your service.</p>
+
+      <p>You can create a payment link for a single user or make it reusable for other service users.</p>
+
+      <img src="/public/images/payment-link-demo-1.png" alt="">
+
+      <p>Add your payment link where your users can see it, like in a letter or on your website.</p>
+
+      <p>When your users access your payment link, they’ll be able to make an online card payment. Your users will receive a payment reference number and a confirmation email.</p>
+
+      <h2 class="heading-medium">What do paying users see</h2>
+      <p>When your users access the link, they will see the information you provided and be able to enter their card details. They will receive a payment reference number and a confirmation email.</p>
+
+      <h2 class="heading-medium">Is this right for yoru service?</h2>
+
+      <p>Self Service Payments allows services to manually create payments. It’s aimed at service that do not need or have a suitable digital service to do an API integration with. 
+
+     <p>Top up payments? </p>
+
+     <p>Find out more about Self Service Payment by contacting the team. Follow our guide to getting started to create an account.</p>
+    </div>
+  </div>
+ 
+
+</main>
+
+{% endblock %}
