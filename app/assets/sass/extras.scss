@@ -1,3 +1,4 @@
+@import 'application';
 // Radio buttons & checkboxes
 
 // By default, multiple choice inputs stack vertically
@@ -117,20 +118,20 @@
     @include opacity(1);
   }
 
-  // Disabled state
-  input:disabled {
-    cursor: default;
-  }
+  // // Disabled state
+  // input:disabled {
+  //   cursor: default;
+  // }
 
-  input:disabled + label {
-    @include opacity(0.5);
-    cursor: default;
-  }
+  // input:disabled + label {
+  //   @include opacity(0.5);
+  //   cursor: default;
+  // }
 
-  &:last-child,
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+  // &:last-child,
+  // &:last-of-type {
+  //   margin-bottom: 0;
+  // }
 
 
 // To sit multiple choice inputs next to each other, use .inline on parent
